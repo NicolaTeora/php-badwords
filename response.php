@@ -2,9 +2,10 @@
 //tramite "get" metto in un variabile il valore mandato tramite input
 $text = $_GET['text_element'];
 $word = $_GET['one_word'];
+$censorship = '***';
 
 $length_p = strlen($text);
-$new_text = str_replace($word , '***', $text);
+$new_text = str_replace($word , $censorship, $text);
 
 ?>
 
