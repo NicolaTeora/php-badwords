@@ -20,8 +20,12 @@
         per indicare dove inviare i dati --> <!-- e dal "method" utilizzato per l'invio dei dati -->
         
         <form action="./response.php" method="GET">
-            <label for="text-zone" class="form-label">Testo:</label>
+            <label for="word" class="form-label"><b>Quale parola censurare nel testo:</b></label>
+            <input type="text" id="word" name="one_word" class="form-control" placeholder="inserisci parola"> 
+            
+            <label for="text-zone" class="form-label"><b>Testo:</b></label>
             <textarea name="text_element" id="text-zone" class="form-control" placeholder="inserisci il testo"></textarea>
+            
             <button class="btn btn-success mt-2">invia</button>
         </form>
 
