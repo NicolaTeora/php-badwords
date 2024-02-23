@@ -22,16 +22,17 @@ $new_text = str_replace($word , '***', $text);
 
 <body>
     <div class="container">
+        
         <!-- stampo il contenuto ricevuto tramite input e messo nella variabile php -->
-        <span>Testo originale:</span>
+        <span class="text-decoration-underline">Testo originale:</span>
         <p><?php  echo $text ?></p>
 
-        <span>Lunghezza del Testo:</span>
+        <span class="text-decoration-underline">Lunghezza del Testo:</span>
         <!-- stampo la lunghezza dell'array -->
         <p><?php echo $length_p ?></p>
 
         <!-- stampo il testo formattato -->
-        <span>Testo censurato:</span>
+        <span class="text-decoration-underline">Testo censurato:</span>
         <p><?php echo $new_text ?></p>
     </div>    
 </body>
